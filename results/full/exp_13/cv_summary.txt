@@ -1,0 +1,41 @@
+Cross Validation Summary - Experiment 13
+============================================================
+
+Configuration:
+  Features: ['SRAD']
+  Normalization: minmax
+  Bias correction: coastal_distance
+
+Best Model: Fold B
+  Average RMSE: 2.9801
+  RMSE Std: 0.0733
+  Average R²: 0.8363
+  CV: 0.0246
+  Validations: 4
+
+Detailed Cross-Validation Results:
+  Training Fold A:
+    → Fold B: RMSE=3.6230, R²=0.7599
+    → Fold C: RMSE=3.2946, R²=0.8051
+    → Fold D: RMSE=3.0922, R²=0.8178
+    → Fold E: RMSE=3.6800, R²=0.7518
+  Training Fold B:
+    → Fold A: RMSE=2.9761, R²=0.8382
+    → Fold C: RMSE=2.9701, R²=0.8416
+    → Fold D: RMSE=3.0902, R²=0.8181
+    → Fold E: RMSE=2.8840, R²=0.8475
+  Training Fold C:
+    → Fold A: RMSE=2.7123, R²=0.8656
+    → Fold B: RMSE=2.3970, R²=0.8949
+    → Fold D: RMSE=3.2939, R²=0.7933
+    → Fold E: RMSE=2.9418, R²=0.8414
+  Training Fold D:
+    → Fold A: RMSE=2.8384, R²=0.8528
+    → Fold B: RMSE=2.5903, R²=0.8773
+    → Fold C: RMSE=2.8155, R²=0.8577
+    → Fold E: RMSE=3.1382, R²=0.8195
+  Training Fold E:
+    → Fold A: RMSE=3.0867, R²=0.8259
+    → Fold B: RMSE=2.5377, R²=0.8822
+    → Fold C: RMSE=2.9329, R²=0.8455
+    → Fold D: RMSE=3.5812, R²=0.7557

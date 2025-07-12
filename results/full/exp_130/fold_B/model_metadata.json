@@ -1,0 +1,27 @@
+{
+  "normalization": "decimal",
+  "n_features": 21,
+  "feature_names": [
+    "hima_clearness",
+    "distance_to_sea",
+    "latitude_norm",
+    "longitude_norm",
+    "lat_lon_interaction",
+    "coastal_latitude",
+    "region_factor",
+    "agera5_clearness",
+    "agera5_TMAX",
+    "agera5_DTR",
+    "coastal_0_1km",
+    "coastal_1_5km",
+    "coastal_5_50km",
+    "coastal_50km_plus",
+    "coastal_bias_factor",
+    "coastal_clearness_interaction",
+    "high_radiation_flag",
+    "low_radiation_flag",
+    "very_clear",
+    "cloudy",
+    "moderate_radiation"
+  ]
+}

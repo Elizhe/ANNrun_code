@@ -1,0 +1,20 @@
+{
+  "normalization": "standard",
+  "n_features": 14,
+  "feature_names": [
+    "hima_clearness",
+    "distance_to_sea",
+    "latitude_norm",
+    "longitude_norm",
+    "lat_lon_interaction",
+    "coastal_latitude",
+    "region_factor",
+    "agera5_clearness",
+    "agera5_PREC",
+    "high_radiation_flag",
+    "low_radiation_flag",
+    "very_clear",
+    "cloudy",
+    "moderate_radiation"
+  ]
+}

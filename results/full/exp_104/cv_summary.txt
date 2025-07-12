@@ -1,0 +1,41 @@
+Cross Validation Summary - Experiment 104
+============================================================
+
+Configuration:
+  Features: ['SRAD', 'PREC']
+  Normalization: minmax
+  Bias correction: radiation_flags
+
+Best Model: Fold B
+  Average RMSE: 2.7571
+  RMSE Std: 0.0391
+  Average R²: 0.8600
+  CV: 0.0142
+  Validations: 4
+
+Detailed Cross-Validation Results:
+  Training Fold A:
+    → Fold B: RMSE=2.6022, R²=0.8761
+    → Fold C: RMSE=2.9093, R²=0.8476
+    → Fold D: RMSE=2.7166, R²=0.8594
+    → Fold E: RMSE=3.0391, R²=0.8307
+  Training Fold B:
+    → Fold A: RMSE=2.7477, R²=0.8622
+    → Fold C: RMSE=2.7143, R²=0.8674
+    → Fold D: RMSE=2.7456, R²=0.8564
+    → Fold E: RMSE=2.8209, R²=0.8541
+  Training Fold C:
+    → Fold A: RMSE=2.6660, R²=0.8703
+    → Fold B: RMSE=2.2411, R²=0.9081
+    → Fold D: RMSE=2.8512, R²=0.8451
+    → Fold E: RMSE=2.8804, R²=0.8479
+  Training Fold D:
+    → Fold A: RMSE=2.7622, R²=0.8608
+    → Fold B: RMSE=2.2817, R²=0.9048
+    → Fold C: RMSE=2.6712, R²=0.8716
+    → Fold E: RMSE=2.8235, R²=0.8539
+  Training Fold E:
+    → Fold A: RMSE=2.7932, R²=0.8576
+    → Fold B: RMSE=2.2948, R²=0.9037
+    → Fold C: RMSE=2.7649, R²=0.8624
+    → Fold D: RMSE=2.8191, R²=0.8486

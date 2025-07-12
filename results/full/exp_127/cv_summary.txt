@@ -1,0 +1,41 @@
+Cross Validation Summary - Experiment 127
+============================================================
+
+Configuration:
+  Features: ['SRAD', 'TMAX', 'DTR']
+  Normalization: decimal
+  Bias correction: clearness,radiation_flags
+
+Best Model: Fold D
+  Average RMSE: 2.8566
+  RMSE Std: 0.1393
+  Average R²: 0.8505
+  CV: 0.0488
+  Validations: 4
+
+Detailed Cross-Validation Results:
+  Training Fold A:
+    → Fold B: RMSE=2.7435, R²=0.8645
+    → Fold C: RMSE=2.9825, R²=0.8418
+    → Fold D: RMSE=3.1870, R²=0.8129
+    → Fold E: RMSE=3.0717, R²=0.8248
+  Training Fold B:
+    → Fold A: RMSE=3.0074, R²=0.8288
+    → Fold C: RMSE=2.7844, R²=0.8621
+    → Fold D: RMSE=3.8831, R²=0.7223
+    → Fold E: RMSE=2.5920, R²=0.8752
+  Training Fold C:
+    → Fold A: RMSE=4.6878, R²=0.5841
+    → Fold B: RMSE=2.8645, R²=0.8523
+    → Fold D: RMSE=5.6883, R²=0.4040
+    → Fold E: RMSE=3.4604, R²=0.7776
+  Training Fold D:
+    → Fold A: RMSE=2.6227, R²=0.8698
+    → Fold B: RMSE=2.9102, R²=0.8476
+    → Fold C: RMSE=2.9901, R²=0.8410
+    → Fold E: RMSE=2.9033, R²=0.8434
+  Training Fold E:
+    → Fold A: RMSE=2.9982, R²=0.8299
+    → Fold B: RMSE=3.0565, R²=0.8319
+    → Fold C: RMSE=3.2004, R²=0.8178
+    → Fold D: RMSE=3.4102, R²=0.7858

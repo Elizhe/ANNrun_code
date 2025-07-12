@@ -1,0 +1,16 @@
+{
+  "normalization": "minmax",
+  "n_features": 10,
+  "feature_names": [
+    "hima_clearness",
+    "distance_to_sea",
+    "latitude_norm",
+    "longitude_norm",
+    "lat_lon_interaction",
+    "coastal_latitude",
+    "region_factor",
+    "agera5_clearness",
+    "agera5_TMAX",
+    "agera5_DTR"
+  ]
+}

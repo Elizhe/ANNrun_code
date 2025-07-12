@@ -1,0 +1,41 @@
+Cross Validation Summary - Experiment 135
+============================================================
+
+Configuration:
+  Features: ['SRAD', 'TMAX', 'DTR']
+  Normalization: minmax
+  Bias correction: weather_flags
+
+Best Model: Fold B
+  Average RMSE: 2.8159
+  RMSE Std: 0.0578
+  Average R²: 0.8541
+  CV: 0.0205
+  Validations: 4
+
+Detailed Cross-Validation Results:
+  Training Fold A:
+    → Fold B: RMSE=2.7898, R²=0.8576
+    → Fold C: RMSE=3.3069, R²=0.8036
+    → Fold D: RMSE=3.1960, R²=0.8054
+    → Fold E: RMSE=3.3909, R²=0.7892
+  Training Fold B:
+    → Fold A: RMSE=2.8204, R²=0.8547
+    → Fold C: RMSE=2.8287, R²=0.8563
+    → Fold D: RMSE=2.7266, R²=0.8584
+    → Fold E: RMSE=2.8880, R²=0.8471
+  Training Fold C:
+    → Fold A: RMSE=2.6803, R²=0.8687
+    → Fold B: RMSE=2.3410, R²=0.8997
+    → Fold D: RMSE=2.9614, R²=0.8329
+    → Fold E: RMSE=2.9607, R²=0.8393
+  Training Fold D:
+    → Fold A: RMSE=2.7746, R²=0.8593
+    → Fold B: RMSE=2.3111, R²=0.9023
+    → Fold C: RMSE=2.7076, R²=0.8684
+    → Fold E: RMSE=2.8895, R²=0.8470
+  Training Fold E:
+    → Fold A: RMSE=2.8812, R²=0.8483
+    → Fold B: RMSE=2.4188, R²=0.8930
+    → Fold C: RMSE=2.9157, R²=0.8474
+    → Fold D: RMSE=2.8431, R²=0.8460

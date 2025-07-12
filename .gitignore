@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# Virtual environment
+.venv/
+venv/
+
+# Data & result artifacts
+*.csv
+*.h5
+*.pth
+*.pt
+*.ckpt
+*.npz
+*.npy
+
+# IDEs
+.vscode/
+.idea/

@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: annrun-code
+Version: 1.0.0
+Summary: Enhanced Neural Network Experiment Framework
+Requires-Python: >=3.8
+Provides-Extra: tensorflow
+Provides-Extra: pytorch
+Provides-Extra: ray
+Provides-Extra: all
