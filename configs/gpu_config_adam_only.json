@@ -1,0 +1,68 @@
+{
+  "gpu_info": {
+    "model": "RTX 2060 SUPER",
+    "memory_gb": 8,
+    "compute_capability": "7.5"
+  },
+  "architectures": [
+    "single_32",
+    "single_64",
+    "single_128",
+    "double_32_16",
+    "double_64_32",
+    "double_128_64",
+    "double_64_64",
+    "triple_128_64_32",
+    "triple_64_32_16",
+    "triple_32_32_16",
+    "deep_256_128_64_32",
+    "deep_128_128_64_32"
+  ],
+  "regularizations": [
+    "none",
+    "dropout_0.1",
+    "dropout_0.2",
+    "dropout_0.3",
+    "batch_norm",
+    "l2_light",
+    "l1l2_medium",
+    "dropout_batch_norm",
+    "full_regularization"
+  ],
+  "optimizers": [
+    "adam_default",
+    "adam_low"
+  ],
+  "batch_sizes": {
+    "single_32": 512,
+    "single_64": 512,
+    "single_128": 256,
+    "double_32_16": 512,
+    "double_64_32": 256,
+    "double_128_64": 128,
+    "double_64_64": 256,
+    "triple_128_64_32": 128,
+    "triple_64_32_16": 256,
+    "triple_32_32_16": 256,
+    "deep_256_128_64_32": 64,
+    "deep_128_128_64_32": 128
+  },
+  "memory_config": {
+    "gpu_memory_limit": 7.5,
+    "memory_growth": true,
+    "allow_memory_growth": true,
+    "memory_limit_mb": 7680,
+    "tensorflow_memory_limit": 0.9,
+    "pytorch_memory_fraction": 0.9
+  },
+  "training_config": {
+    "use_mixed_precision": true,
+    "gradient_accumulation_steps": 1,
+    "max_epochs": 200,
+    "early_stopping_patience": 20,
+    "reduce_lr_patience": 10,
+    "min_lr": 1e-07,
+    "validation_split": 0.2
+  },
+  "total_combinations": 216
+}

@@ -1,5 +1,14 @@
 #!/usr/bin/env python3
 """
+Direct Data Loader Fix - Complete working replacement
+This replaces the problematic data_loader.py with a clean, working version
+"""
+
+def create_working_data_loader():
+    """Create a complete working data_loader.py"""
+    
+    working_code = '''#!/usr/bin/env python3
+"""
 Enhanced Data Loader for ANNrun_code - FIXED VERSION
 Supports AGERA5 and Himawari features with proper type safety
 """
@@ -374,3 +383,75 @@ if __name__ == "__main__":
     print(f"✅ Clearness calculation: {clearness}")
     
     print("🎉 All tests passed! Data loader is working correctly.")
+'''
+    
+    return working_code
+
+def main():
+    """Replace the problematic data_loader.py with working version"""
+    import shutil
+    import sys
+    from pathlib import Path
+    import pandas as pd
+    
+    print("🔄 Creating Complete Working Data Loader")
+    print("=" * 50)
+    
+    # Paths
+    original_file = Path("core/data/data_loader.py")
+    
+    # Create backup of current version
+    backup_file = original_file.with_suffix(f'.backup_complete_{pd.Timestamp.now().strftime("%Y%m%d_%H%M%S")}.py')
+    
+    if original_file.exists():
+        shutil.copy2(original_file, backup_file)
+        print(f"✅ Current version backed up to: {backup_file}")
+    
+    # Create working version
+    working_code = create_working_data_loader()
+    
+    with open(original_file, 'w', encoding='utf-8') as f:
+        f.write(working_code)
+    
+    print(f"✅ New working data_loader.py created")
+    
+    # Test the new version
+    print("\n🧪 Testing new data loader...")
+    
+    try:
+        # Clear Python cache
+        if 'core.data.data_loader' in sys.modules:
+            del sys.modules['core.data.data_loader']
+        if 'core.data' in sys.modules:
+            del sys.modules['core.data']
+        
+        # Test import
+        from core.data.data_loader import DataLoader, Agera5Loader, HimawariLoader, PangaeaDataLoader
+        print("✅ Import test: SUCCESS")
+        
+        # Test instantiation
+        loader = DataLoader()
+        agera5 = Agera5Loader()
+        himawari = HimawariLoader()
+        pangaea = PangaeaDataLoader()
+        print("✅ Instantiation test: SUCCESS")
+        
+        print("\n🎉 DATA LOADER IS NOW WORKING!")
+        print("\n🚀 Next steps:")
+        print("1. Test: python -c \"from core.data.data_loader import DataLoader; print('SUCCESS')\"")
+        print("2. Run GPU check: python gpu_memory_monitor.py")
+        print("3. Run experiment: python main.py single gpu_experiment_plan.csv 1")
+        
+        return True
+        
+    except Exception as e:
+        print(f"❌ Test failed: {e}")
+        print("\n🔧 Manual check needed:")
+        print("1. Verify file was created correctly")
+        print("2. Check for any remaining import issues")
+        print("3. Try restarting Python session")
+        
+        return False
+
+if __name__ == "__main__":
+    main()
